@@ -1,7 +1,8 @@
 
 
 #let poster(
-  title: "Developing an Autonomous Submarine", 
+  // title: "Developing an Autonomous Submarine", 
+  title: "Autonomous Underwater Vehicle Design", 
   leadership: json("data/leaders.json").map(it => [#it.name]),
   advisors: json("data/advisors.json").map(it => [#it.name]), 
   members: json("data/members.json").map(it => [#it.name]), 
@@ -27,47 +28,62 @@
   
 
   set text(
-    font: "Atkinson Hyperlegible", 
+    font: "Montserrat", 
     lang: "en", 
-    28pt
+    24pt
+  )
+
+  show image: it => box(
+    it, 
+    radius: 5pt, 
+    clip: true
   )
   
-  set par(justify: true)
+  set par(
+    justify: true,
+    leading: .65em,
+    spacing: 1.8em,
+  )
+  
   set grid(gutter: .4in)
   
   set heading(numbering: none)
-  show heading: set text(colors.at(0))
+  show heading: set text(
+    colors.at(0),
+    font: "Prompt",
+    weight: "semibold",
+  )
   //show heading: set align(right)
   
   show heading.where(level: 1): it => {
     set par(leading: .5em)
-    set text(72pt, weight: "bold")
+    set text(2em, weight: "semibold")
     v(-.5em)
     block(it.body)
   }
   
 
   show heading.where(level: 2): it => {
-    set text(32pt, weight: "bold", tracking: 1.5pt)
+    set text(1.5em, weight: "bold", tracking: 1.5pt)
      v(.5em)
     block(upper(it.body))
   }
 
-  show raw.where(block: false): box.with(
-    fill: luma(240),
-    inset: (x: 3pt, y: 0pt),
-    outset: (y: 3pt),
-    radius: 2pt,
-  )
+  // show raw.where(block: false): box.with(
+  //   fill: luma(240),
+  //   inset: (x: 3pt, y: 0pt),
+  //   outset: (y: 3pt),
+  //   radius: 2pt,
+  // )
   
-  // Code Block
-  show raw.where(block: true): block.with(
-    fill: luma(96%),
-    inset: 10pt,
-    radius: 4pt,
-  )
+  // // Code Block
+  // show raw.where(block: true): block.with(
+  //   fill: luma(96%),
+  //   inset: 10pt,
+  //   radius: 4pt,
+  // )
 
-  show figure.caption: set text(.7em, fill: colors.at(2))
+  show figure.caption: set text(.7em, fill: colors.at(0))
 
   let list(list) = {
     for l in list {
@@ -76,10 +92,19 @@
   }
   
   // Title 
-  place(top + left, image("graphics/COE_logo_color_cmyk.svg", height: 1.15in)) 
-  place(top + right, image("graphics/Full Title.svg", height: 1.5in))
-  align(center, text(110pt, weight: 900, fill: colors.at(0), title)) 
-  v(-2em)
+  // place(top + left, image("graphics/COE_logo_color_cmyk.svg", height: 1.15in)) 
+  // place(top + right, dx: 0in,  image("graphics/Full Title.svg", height: 1.5in))
+  // align(center, text(110pt, weight: 900, fill: colors.at(0), title)) 
+  // v(-2em)
+  grid(
+    columns: (auto, 1fr, auto), 
+    gutter: 1in, 
+    align: center, 
+    image("graphics/COE_logo_color_cmyk.svg", height: 1.15in),
+    text(100pt, font: "Prompt", weight: "bold", fill: colors.at(0), title),
+    image("graphics/Full Title.svg", height: 1.5in),
+  )
+  v(-1em)
   
   line(length: 100%, stroke: 4pt + colors.at(0))
   
@@ -109,3 +134,4 @@
 }
 
 #poster()
+
