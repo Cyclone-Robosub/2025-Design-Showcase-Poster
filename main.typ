@@ -2,7 +2,7 @@
 
 #let poster(
   // title: "Developing an Autonomous Submarine", 
-  title: "Autonomous Underwater Vehicle Design", 
+  title: "Autonomous Underwater Vehicle", 
   leadership: json("data/leaders.json").map(it => [#it.name]),
   advisors: json("data/advisors.json").map(it => [#it.name]), 
   members: json("data/members.json").map(it => [#it.name]), 
@@ -30,7 +30,7 @@
   set text(
     font: "Montserrat", 
     lang: "en", 
-    24pt
+    28pt
   )
 
   show image: it => box(
