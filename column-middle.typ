@@ -5,7 +5,7 @@
 The vehicle relies on a combination of sensors to determine its depth, heading, and position within the pool. All data and commands are sent over a ROS network and mission planning is handled by the Executive Main Loop which is written in C++.
 #figure(
   image("images/controls flowchart.svg", width: 100%),
-  caption: [Structural CAD of Robot (Made in Onhape)]
+  caption: [Overview of software structure spanning all hardware]
 )
 
 = Dynamics Modeling

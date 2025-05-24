@@ -76,8 +76,8 @@
 
   place(
     top + right, 
-    dx: 1.5em,
-    dy: -1.5em, 
+    // dx: 1.5em,
+    dy: -1.25em, 
     text(
       fill: luma(40%),
       weight: 700, 
@@ -118,9 +118,13 @@
   grid(
     columns: split, 
     column-gutter: 2%,
+    // stroke: (x, y) => 
+    //   if x == 1 or x == 2 {colors.at(2)},
     include "column-left.typ",
+    // grid.vline(position: start),
     include "column-middle.typ",
     include "column-right.typ",
+
   )  
 }
 
