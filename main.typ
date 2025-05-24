@@ -1,36 +1,37 @@
-
-
 #let poster(
-  // title: "Developing an Autonomous Submarine", 
   title: "Autonomous Underwater Vehicle", 
   leadership: json("data/leaders.json").map(it => [#it.name]),
   advisors: json("data/advisors.json").map(it => [#it.name]), 
   members: json("data/members.json").map(it => [#it.name]), 
   date: datetime.today().display("[month repr:long] [day], [year]"),
-  split: (1fr, 1.2fr, 1fr),
+  // split: (1fr, 1fr, 1fr),
+  split: (13.5in, 1fr, 13.5in),
   print-margin: .5in,
   colors: (rgb("01696cff"), rgb("02979dff"), rgb("48b0b3ff"))
 ) = {
-  
 
   set document(author: "Cyclone RoboSub @ UC Davis", title: title)
   
   set page(
-
     height: 35in + print-margin*2,
     width: 47in + print-margin*2,
     margin: (
-      bottom: 2.5in + print-margin,
-      rest: 1.5in + print-margin,
+      bottom: 1in + print-margin,
+      rest: .5in + print-margin,
     ),
     background: image("graphics/background.svg", width: 48in, height: 36in, scaling: "smooth", fit: "stretch")
   )
-  
 
   set text(
     font: "Montserrat", 
     lang: "en", 
     28pt
+  )
+
+  set par(
+    justify: true,
+    leading: .6em,
+    spacing: 1.2em,
   )
 
   show image: it => box(
@@ -39,13 +40,10 @@
     clip: true
   )
   
-  set par(
-    justify: true,
-    leading: .65em,
-    spacing: 1.8em,
-  )
   
-  set grid(gutter: .4in)
+  set grid(
+    gutter: .375in
+  )
   
   set heading(numbering: none)
   show heading: set text(
@@ -53,84 +51,77 @@
     font: "Prompt",
     weight: "semibold",
   )
-  //show heading: set align(right)
   
   show heading.where(level: 1): it => {
     set par(leading: .5em)
-    set text(2em, weight: "semibold")
+    set text(60pt, weight: "semibold")
     v(-.5em)
     block(it.body)
   }
   
-
   show heading.where(level: 2): it => {
     set text(1.5em, weight: "bold", tracking: 1.5pt)
      v(.5em)
     block(upper(it.body))
   }
 
-  // show raw.where(block: false): box.with(
-  //   fill: luma(240),
-  //   inset: (x: 3pt, y: 0pt),
-  //   outset: (y: 3pt),
-  //   radius: 2pt,
-  // )
+  show figure.caption: it => {
+    v(-.15em)
+    text(
+      .7em, 
+      fill: luma(30%),
+      it
+    ) 
+  } 
+
+  place(
+    top + right, 
+    dx: 1.5em,
+    dy: -1.5em, 
+    text(
+      fill: luma(40%),
+      weight: 700, 
+      [Station 173]
+    )
+  )
+
+  grid(
+    columns: (auto, 1fr, auto), 
+    gutter: 1in, 
+    align: bottom + center, 
+    image("graphics/COE_logo_color_cmyk.svg", height: 1.15in),
+    text(100pt, font: "Prompt", weight: "bold", fill: colors.at(0), title),
+    image("graphics/Full Title.svg", height: 1.15in),
+  )
+
+  v(-.2em)
+  line(length: 100%, stroke: 4pt + colors.at(0))
+  v(-.2em)
   
-  // // Code Block
-  // show raw.where(block: true): block.with(
-  //   fill: luma(96%),
-  //   inset: 10pt,
-  //   radius: 4pt,
-  // )
-
-  show figure.caption: set text(.7em, fill: colors.at(0))
-
   let list(list) = {
     for l in list {
       l + if l != list.last() [, ]
     }
   }
-  
-  // Title 
-  // place(top + left, image("graphics/COE_logo_color_cmyk.svg", height: 1.15in)) 
-  // place(top + right, dx: 0in,  image("graphics/Full Title.svg", height: 1.5in))
-  // align(center, text(110pt, weight: 900, fill: colors.at(0), title)) 
-  // v(-2em)
-  grid(
-    columns: (auto, 1fr, auto), 
-    gutter: 1in, 
-    align: center, 
-    image("graphics/COE_logo_color_cmyk.svg", height: 1.15in),
-    text(100pt, font: "Prompt", weight: "bold", fill: colors.at(0), title),
-    image("graphics/Full Title.svg", height: 1.5in),
-  )
-  v(-1em)
-  
-  line(length: 100%, stroke: 4pt + colors.at(0))
-  
+
   align(
     center, 
     stack(
-      spacing: 1em,
-      list(leadership),
-      // text(.5em, list(members)),
-      [Advisors: #list(advisors)],
+      spacing: .7em,
+      [*Leadership:* #list(leadership)],
+      [*Advisors:* #list(advisors)],
     )
   )
-  v(2em)
+  v(.9em)
   
   // Body
   grid(
     columns: split, 
-    column-gutter: 3%,
+    column-gutter: 2%,
     include "column-left.typ",
     include "column-middle.typ",
     include "column-right.typ",
   )  
-
-
-
-
 }
 
 #poster()
