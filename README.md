@@ -12,3 +12,6 @@ typst watch main.typ
 ```
 You can use any PDF view, though you may need to reload the page every time that you make a change.
 To exit, use `Ctrl+C`.
+
+> [!Warning]
+> If you do not have the correct fonts installed, the output render may use Typst default fonts

@@ -42,7 +42,7 @@ The vehicle is powered by a single 16V Lithium Polymer (LiPo) battery which supp
   ]
 )
 = Acknowledgements
-#set text(.8em)
+#set text(.9em)
 
 We would also like to thank all of our highly dedicated team members, including but not limited to
 #let members = json("data/members.json").map(it => it.name)
