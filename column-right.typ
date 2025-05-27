@@ -16,7 +16,7 @@ The vehicle is powered by a single 16V Lithium Polymer (LiPo) battery which supp
 )
 
 #figure(
-  image("images/electrical-diagram.svg"),
+  image("images/electrical-diagram.svg", width: 90%),
   caption: [Electrical diagram of the robot]
 )
 

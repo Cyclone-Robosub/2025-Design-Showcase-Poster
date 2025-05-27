@@ -12,9 +12,12 @@ The vehicle relies on a combination of sensors to determine its depth, heading, 
 The control scheme is built in MATLAB Simulink which generates trajectories and regulates PID feedback based on a built dynamic model and waypoints. The model accounts for the AUV's 6-axes of freedom, buoyancy, drag, and vectored thruster configuration. The parameters are measured and validated based on IMU data collected during underwater testing.
 
 #figure(
-  image("images/Simulink Layout.png"),
+  image("images/controller-plant4.svg", width: 95%),
+  // image("images/Simulink Layout.png"),
   caption: [Simulink Block Model]
 )
+
+#v(-2em)
 = Vision
 #oasis-align(
   // swap: true, 
