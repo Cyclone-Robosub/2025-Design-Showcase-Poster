@@ -19,7 +19,7 @@ The control scheme is built in MATLAB Simulink which generates trajectories and 
 #v(-1em)
 = Vision
 #grid(
-  columns: (1fr, 11.5in),
+  columns: (1fr, 11in),
 // #oasis-align(
   // swap: true, 
   // int-dir: -1,

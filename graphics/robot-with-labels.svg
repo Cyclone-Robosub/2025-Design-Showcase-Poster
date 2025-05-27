@@ -35,13 +35,13 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#222222"
-     inkscape:zoom="0.72701975"
-     inkscape:cx="640.28522"
-     inkscape:cy="262.71638"
-     inkscape:window-width="1920"
-     inkscape:window-height="1051"
-     inkscape:window-x="-9"
-     inkscape:window-y="1341"
+     inkscape:zoom="1.0281612"
+     inkscape:cx="516.94229"
+     inkscape:cy="237.31687"
+     inkscape:window-width="2560"
+     inkscape:window-height="1411"
+     inkscape:window-x="1911"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg47" />
   <image
@@ -60,33 +60,41 @@
      stroke-width="4"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="M 958.59058,40.7953 716.03937,68.7008"
+     d="M 958.59058,40.7953 724.30656,83.289952"
      fill-rule="evenodd"
-     id="path6" />
+     id="path6"
+     sodipodi:nodetypes="cc"
+     style="stroke-linecap:round" />
   <path
      stroke="#34acb1"
      stroke-width="4"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="M 1087.08,187.5917 912.37148,229.954"
+     d="M 1087.08,187.5917 922.09758,229.46769"
      fill-rule="evenodd"
-     id="path13" />
+     id="path13"
+     sodipodi:nodetypes="cc"
+     style="stroke-linecap:round" />
   <path
      stroke="#34acb1"
      stroke-width="4"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="m 1002.5577,310.2113 -90.20462,-4.1575"
+     d="m 1002.5577,310.2113 -95.06767,-3.67119"
      fill-rule="evenodd"
-     id="path15" />
+     id="path15"
+     sodipodi:nodetypes="cc"
+     style="stroke-linecap:round" />
   <path
      stroke="#34acb1"
      stroke-width="4"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="m 190.32403,170.3583 208.94485,89.5432"
+     d="m 190.32403,170.3583 222.56139,99.2693"
      fill-rule="evenodd"
-     id="path19" />
+     id="path19"
+     sodipodi:nodetypes="cc"
+     style="stroke-linecap:round" />
   <path
      stroke="#34acb1"
      stroke-width="4"
@@ -94,23 +102,28 @@
      stroke-linecap="butt"
      d="M 390.00662,36.3688 530.1326,98.8253"
      fill-rule="evenodd"
-     id="path23" />
+     id="path23"
+     style="stroke-linecap:round" />
   <path
      stroke="#34acb1"
      stroke-width="4"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="M 390.00662,419.2453 211.99087,470.7099"
+     d="M 381.73943,437.23859 211.99087,470.7099"
      fill-rule="evenodd"
-     id="path27" />
+     id="path27"
+     sodipodi:nodetypes="cc"
+     style="stroke-linecap:round" />
   <path
      stroke="#34acb1"
      stroke-width="4"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="m 690.59188,342.5248 251.2441,42.6772"
+     d="M 713.93452,343.98372 941.83598,385.202"
      fill-rule="evenodd"
-     id="path32" />
+     id="path32"
+     sodipodi:nodetypes="cc"
+     style="stroke-linecap:round" />
   <path
      fill="#000000"
      fill-opacity="0"
@@ -122,9 +135,11 @@
      stroke-width="4"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="m 279.39505,89.7755 244.15747,91.6851"
+     d="m 279.39505,89.7755 213.72501,81.88482"
      fill-rule="evenodd"
-     id="path36" />
+     id="path36"
+     sodipodi:nodetypes="cc"
+     style="stroke-linecap:round" />
   <path
      stroke="#34acb1"
      stroke-width="4"
@@ -132,7 +147,8 @@
      stroke-linecap="butt"
      d="m 696.29268,393.0854 157.51184,67.4958"
      fill-rule="evenodd"
-     id="path40" />
+     id="path40"
+     style="stroke-linecap:round" />
   <path
      stroke="#34acb1"
      stroke-width="4"
@@ -140,7 +156,8 @@
      stroke-linecap="butt"
      d="M 484.97775,297.0485 142.836,323.7572"
      fill-rule="evenodd"
-     id="path44" />
+     id="path44"
+     style="stroke-linecap:round" />
   <text
      xml:space="preserve"
      style="font-weight:500;font-size:32px;line-height:0.85;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium';text-decoration-color:#000000;letter-spacing:0px;fill:#000000;stroke-width:1.33333;stroke-linecap:square;stroke-opacity:0.854902;-inkscape-stroke:none;stop-color:#000000"

@@ -37,7 +37,7 @@
 
       )
     ],
-    footer-descent: 0in,
+    footer-descent: -.2in,
 
   )
 
