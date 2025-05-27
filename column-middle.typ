@@ -16,7 +16,7 @@ The control scheme is built in MATLAB Simulink which generates trajectories and 
   caption: [Vehicle Dynamics Model and Control Loop]
 )
 
-#v(-2em)
+#v(-1em)
 = Vision
 #grid(
   columns: (1fr, 11.5in),
