@@ -5,7 +5,7 @@
 The vehicle relies on a combination of sensors to determine its depth, heading, and position within the pool. All data and commands are sent over a ROS network and mission planning is handled by an executive control algorithm written in C++.
 #figure(
   image("graphics/controls-flowchart.svg", width: 100%),
-  caption: [Overview of software structure spanning all hardware]
+  caption: [Software Structure Across All Hardware]
 )
 
 = Dynamics Modeling
@@ -13,8 +13,7 @@ The control scheme is built in MATLAB Simulink which generates trajectories and 
 
 #figure(
   image("graphics/controller-plant.svg", width: 95%),
-  // image("images/Simulink Layout.png"),
-  caption: [Simulink Block Model]
+  caption: [Vehicle Dynamics Model and Control Loop]
 )
 
 #v(-2em)
@@ -26,9 +25,7 @@ The control scheme is built in MATLAB Simulink which generates trajectories and 
   // int-dir: -1,
   // int-frac: .32,
   [
-    Two cameras provide video feeds, which are processed by a YOLO vision model to identify objects of significance. The model is on team-gathered image-data of game elements such as the path found in @path in pools.
-    // The downward facing camera allows for positioning the dropper, while the forward facing camera determines which side of the start gate the vehicle passes through. 
-    Identifying objects along the course help the robot track its position within the pool.
+    Two cameras provide video feeds, which are processed by a YOLO vision model to identify objects of significance. The model is on team-gathered image-data of game elements such as the path found in @path in pools.Identifying objects along the course help the robot track its position within the pool.
   ],
   figure(
     image("images/vision-model.jpg"),
