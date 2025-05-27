@@ -1,6 +1,10 @@
 # 2025-Design-Showcase-Poster
 Poster for the 2025 UC Davis Engineering Design Showcase
 
+## Abstract
+
+Cyclone RoboSub is a Student Engineering Design Team who have spent the previous two years designing, manufacturing, and programming an autonomous underwater vehicle (AUV) to compete in the 2025 RoboSub Competition held in Irvine, CA.   
+
 ## How to Run Locally
 Install Typst
 ```bash

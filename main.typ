@@ -19,7 +19,26 @@
       bottom: 1in + print-margin,
       rest: .5in + print-margin,
     ),
-    background: image("graphics/background.svg", width: 48in, height: 36in, scaling: "smooth", fit: "stretch")
+    background: image(
+      "design/background.svg", 
+      width: 48in, 
+      height: 36in, 
+      scaling: "smooth", 
+      fit: "stretch"
+    ),
+    footer: [
+      #set align(horizon)
+      #h(1fr)
+      #text(white, [2025/06/05])
+      #place(
+        horizon + left, 
+        dx: -.3in,
+        image("design/propeller.svg", width: .8in)
+
+      )
+    ],
+    footer-descent: 0in,
+
   )
 
   set text(
@@ -85,13 +104,18 @@
     )
   ) 
 
+  // place(
+  //   bottom + right,
+  //   image("design/propeller.svg")
+  // )
+
   grid(
     columns: (auto, 1fr, auto), 
     gutter: 1in, 
     align: bottom + center, 
-    image("graphics/COE_logo_color_cmyk.svg", height: 1.15in),
+    image("design/COE_logo_color_cmyk.svg", height: 1.15in),
     text(100pt, font: "Prompt", weight: "bold", fill: colors.at(0), title),
-    image("graphics/Full Title.svg", height: 1.15in),
+    image("design/Full Title.svg", height: 1.15in),
   )
 
   v(-.2em)

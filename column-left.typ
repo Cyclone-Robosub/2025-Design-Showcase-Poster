@@ -20,20 +20,20 @@
 #oasis-align(
   int-frac: 0.4, 
   figure(
-    image("images/robonation.png"),
+    image("design/robonation.png"),
     // caption: [RoboNation Logo]
   ),
   [
-    Teams from around the world compete with custom AUVs which complete tasks such as manipulating objects, maneuvering around obstacles, and firing torpedoes. Our team has prioritized navigation-based tasks, eliminating the need for precise manipulation. Cyclone RoboSub will be competing for the first time this year where we will debut our vehicle!
+    Teams from around the world compete with custom AUVs which complete tasks such as manipulating objects, maneuvering around obstacles, and firing torpedoes. Our team prioritized navigation-based tasks, eliminating the need for precise manipulation. Cyclone RoboSub will be competing for the first time this year and debuting our first vehicle vehicle!
   ]
 )
  
 
 = Vehicle Design
-Our chosen thruster configuration allows for six degrees of freedom while its symmetry simplifies vehicle control and maneuverability. Designed to be neutrally buoyant and have a low center of mass, the vehicle naturally corrects errors in positioning. All electronics are housed in an acrylic tube with Blue Robotics WetLink penetrators to connect cables to the external environment. 
+Our chosen thruster configuration allows for six degrees of freedom while its symmetry simplifies vehicle control and maneuverability. Designed to be neutrally buoyant and have a low center of mass, the vehicle naturally corrects errors in orientation. All electronics are housed in an acrylic tube with Blue Robotics WetLink penetrators to connect cables to the external environment. 
 
 #figure(
-  image("images/robot-with-labels.svg"),
+  image("graphics/robot-with-labels.svg"),
   caption: [Structural CAD of Robot (Made in Onhape)]
 )
 
@@ -51,14 +51,14 @@ Our chosen thruster configuration allows for six degrees of freedom while its sy
         image("images/bin.jpg"),
         caption: [Bin Task]
       ),
-      figure(
+      [#figure(
         image("images/paths.jpg"),
         caption: [Path Marker]
-      ),
+      ) <path>],
     )
   ],
-  figure(
-    image("images/dropper_assembly.png"),
+  [#figure(
+    image("graphics/dropper_assembly.png"),
     caption: [Dropper Assembly]
-  ),
+  )],
 )
